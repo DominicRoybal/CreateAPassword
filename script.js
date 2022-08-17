@@ -38,7 +38,20 @@ if (useruppercase) {
 } else if (!useruppercase) {
   alert ("You have decided not to use uppercase letters in your password");
 }
-
+//This third option is for numbers
+ var usernumber = window.confirm ("Would you like to include numbers in your password?");
+ if (usernumber) {
+  alert ("You have decided to include numbers in your password");
+ } else if (!usernumber) {
+  alert ("You have decided not to include numbers in your password");
+ }
+// This next section is for special characters
+ var userspecial = window.confirm ("Would you like to include special characters in your password?");
+ if (userspecial) {
+  alert ("You have decided to include special characters in your password");
+ } else if (!userspecial) {
+  alert ("You have decided not to include special characters in your password");
+ }
 
 
 }
