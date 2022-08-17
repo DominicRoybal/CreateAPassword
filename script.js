@@ -14,3 +14,13 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 // This first git push it to make sure I have completed the gitbash to link this to my github acount.
+
+// I decided to start with variables.
+var Length = [1234567891234567];
+var lowercase = [qwertyuioplkjhgfdsazxcvbnm];
+var uppercase = [QWERTYUIOPLKJHGFDSAZXCVBNM];
+var numbers = [0123456789];
+var specialcharacters = ["!","@","#","$","%","^","&","*","(",")",];
+
+
+
