@@ -2,6 +2,7 @@
 //This is a variable labeling the reg generate password button on screen
 var generateBtn = document.querySelector("#generate");
 
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -15,23 +16,19 @@ function writePassword() {
 generateBtn.addEventListener("click", lowercaseprompt);
 
 
-// I decided to start with variables.
-var Length = [1234567891234567];
-var lowercase = [qwertyuioplkjhgfdsazxcvbnm];
-var uppercase = [QWERTYUIOPLKJHGFDSAZXCVBNM];
-var numbers = [0123456789];
-var specialcharacters = ["!","@","#","$","%","^","&","*","(",")"];
 
 
 // Created a function allowing the passowor crediential questions to run.
 // The first is prompting the user to choose options of using or not useing lowercase letters
 function lowercaseprompt() {
+
   var userlowercase = window.confirm ("Would you like you password to include lowecase letters?");
   if (userlowercase){
   alert ("You have decided to use lowercase letters in your password");
 } else if (!userlowercase) {
   alert ("You have decided not to use lowercase letters in your password");
 }
+
 // This second option is propting the user about uppercase letters
  var useruppercase = window.confirm ("Would you like you password to include uppercase letters?");
 if (useruppercase) {
@@ -60,51 +57,105 @@ if (useruppercase) {
   } else if (7 < userlength < 17){
     alert ("You have choosen a password containing " + userlength + " characters.");
   }
-  alert ("Press ok to generate your password!");
+
+
+
+
+  // This is the code this is supposed to create the password
+  var createpass = window.confirm ("Click 'ok' to generate your password.");
+  if (createpass) {
+    for (var i = 0; i < PASS.length; i++){
+      alert ("Your new password is: " + PASS[i]);
+    }
+  }
+  
+// I decided to start with variables.
+var Length = [1234567891234567];
+var lowercase = [qwertyuioplkjhgfdsazxcvbnm];
+var uppercase = [QWERTYUIOPLKJHGFDSAZXCVBNM];
+var numbers = [0123456789];
+var specialcharacters = ["!","@","#","$","%","^","&","*","(",")"];
+  
 
 //This next section will be used to fill in the password credentials
- var PASS = [1234567]
-  if (userlength = 8) {
+var PASS = ["1", "2", "3", "4", "5", "6", "7"]
+  if (userlength == 8) {
     PASS.push (8);
-  } else if (userlength = 9){
+  } else if (userlength == 9){
+    PASS.push (8);
     PASS.push (9);
-  } else if (userlength = 10) {
+  } else if (userlength == 10) {
+    PASS.push (8);
+    PASS.push (9);
     PASS.push (10);
-  } else if (userlength = 11) {
+  } else if (userlength == 11) {
+    PASS.push (8);
+    PASS.push (9);
+    PASS.push (10);
     PASS.push (11);
-  } else if (userlength = 12) {
+  } else if (userlength == 12) {
+    PASS.push (8);
+    PASS.push (9);
+    PASS.push (10);
+    PASS.push (11);
     PASS.push (12);
-  } else if (userlength = 13) {
+  } else if (userlength == 13) {
+    PASS.push (8);
+    PASS.push (9);
+    PASS.push (10);
+    PASS.push (11);
+    PASS.push (12);
     PASS.push (13);
-  } else if (userlength = 14) {
+  } else if (userlength == 14) {
+    PASS.push (8);
+    PASS.push (9);
+    PASS.push (10);
+    PASS.push (11);
+    PASS.push (12);
+    PASS.push (13);
     PASS.push (14);
-  } else if (userlength = 15) {
+  } else if (userlength == 15) {
+    PASS.push (8);
+    PASS.push (9);
+    PASS.push (10);
+    PASS.push (11);
+    PASS.push (12);
+    PASS.push (13);
+    PASS.push (14);
     PASS.push (15);
-  } else if (userlength = 16) {
+  } else if (userlength == 16) {
+    PASS.push (8);
+    PASS.push (9);
+    PASS.push (10);
+    PASS.push (11);
+    PASS.push (12);
+    PASS.push (13);
+    PASS.push (14);
+    PASS.push (15);
     PASS.push (16);
-  } else if (8 > userlength > 16) {
+  } else if (userlength < 8, userlength > 16) {
     PASS = ["Between 8 and 16 characters please"]
   }
   //Creating rulles for the code based on the users answer
   if (userlowercase) {
-    PASS[index] = lowercase[index];
+    PASS[1] = lowercase[i];
   } else if (!userlowercase) {
-    PASS[index] != lowercase[index];
+    PASS[index] != lowercase[i];
   }
   if (useruppercase) {
-    PASS[index] = uppercase[index];
+    PASS[0] = uppercase[i];
   } else if (!uppercase) {
-    PASS[index] != uppercase[index];
+    PASS[index] != uppercase[i];
   }
   if (usernumber) {
-    PASS[index] = numbers[index];
+    PASS[6,7] = numbers[i];
   } else if (!usernumber) {
-    PASS[index] != numbers[index];
+    PASS[index] != numbers[i];
   }
   if (userspecial) {
-    PASS[index] = specialcharacters[index];
+    PASS[8,9] = specialcharacters[i];
   } else if (!userspecial) {
-    PASS[index] != specialcharacters[index];
+    PASS[index] != specialcharacters[i];
   }
 
 
